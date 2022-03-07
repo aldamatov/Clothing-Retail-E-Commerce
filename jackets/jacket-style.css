@@ -1,0 +1,702 @@
+*{
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .main-container{
+    width: 90%;
+    margin: auto;
+    
+  }
+  /* Menu */
+  header {
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+  }
+  
+  nav {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+  }
+  .cont {
+    margin-right: 10px;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  nav .mainMenu li a:hover {
+    background: #d24512;
+    color: rgb(255, 255, 255);
+  }
+  
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .social-icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-linkedin-in:hover {
+    color: #0e76a8;
+  }
+  .fa-github:hover {
+    color: #949292;
+  }
+  .fa-instagram:hover {
+    color: #d223d8;
+  }
+  .fa-facebook-f:hover {
+    color: #3b5998;
+  }
+  
+  nav .logo {
+    margin: 30px;
+    cursor: pointer;
+  }
+  /* Header End */
+  
+  /* Landing */
+  .landing {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+  }
+  
+  .landing h1 {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    vertical-align: c;
+  }
+  /* Eng Landing */
+  
+  @media (max-width: 768px) {
+   
+    nav .mainMenu {
+      width: 100%;
+      margin: auto;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.9);
+      transition: top 1s ease;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    nav .mainMenu li a:hover {
+      background: none;
+      color: #f51000;
+      font-size: 1.6rem;
+    }
+    .social-icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+  
+  
+  /* End Menu */
+  
+  
+  /* z */
+  /* Landing Page Tatiana */
+  .landing-page {
+    background-image: url(https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
+    margin-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+  }
+  .top-menu {
+    display: flex;
+    flex: 60% 40%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  .top-menu .icons i:hover{
+    color: rgb(244, 67, 54);;
+    cursor: pointer;
+  }
+  .search{
+    display: inline;
+  }
+  .top-menu .icons {
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .top-menu .search input, .top-menu .search i, .top-menu .cart i {
+    margin: 10px;
+  }
+  .top-menu .jeans {
+     display: flex;
+    justify-self: start;
+  }   
+  .top-menu .search {
+     display: flex;
+    justify-self: end;
+  }  
+  
+  .landing-page h1{
+    font-size: 60px;
+    text-decoration: none;
+    color: orgb(0, 0, 0);
+    padding: 60px 60px 0 60px;
+    text-align: right;
+    margin: 0;
+    text-align: left;
+  }
+  .landing-page h2{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 50px 60px 0 100px;
+    text-align: right;
+    margin: 0;
+    text-align: left;
+    
+  }
+  .button-sub {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    width: 200px ;
+    position: absolute;
+    top: 250px;
+    left: 140px;
+    font-size: 30px;
+    text-align: left;
+  }
+  .button-sub:hover {
+    background-color: lightgrey;
+    color: black;
+  }
+  .not-remove .icons i{
+    color: #000;
+  }
+  
+  /* Products Jeans Zhyldyz */
+  .products{
+    widows: 80%;
+    margin: auto;
+  
+  }
+  .items-8 h2{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 20px 0;
+  }
+  
+  .products-single{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+  
+  }
+  .product-card{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px
+  }
+  .product-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
+    cursor: pointer;
+  }
+  .product-card h3{
+    padding: 0 20px;
+    font-size: 15px;
+  }
+  .product-card .img-caption{
+    background-color: black;
+    color: white;
+    width: 60px;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
+  .product-card .price-tag{
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .product-card .raiting{
+    text-align: right;
+    margin: 10px;
+  }
+  .products-single .product-card img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  
+  }
+  .products-single .product-card .buy{
+    width: 8rem;
+    background-color: black;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin: 5px;
+    display: none;
+  }
+  .product-card:hover .buy{
+    display: inline;
+    cursor: pointer;
+  }
+  .products-single .product-card .buy:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+  .buy a{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+  }
+  .products-single .product-card .buy a:hover{
+    color: black;
+  }
+  
+  /* Next Button */
+  .next-button{
+    
+    text-align: center;
+    margin: 20px;
+  }
+  .next-button a{
+    margin: 5px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-weight: 600;
+  }
+  .next-button a:hover{
+    background-color: black;
+    color: white;
+  }
+  .next-button .previous{
+    background-color: rgb(228, 227, 227);
+    color: black;
+  }
+  .next-button .next{
+    background-color: rgb(228, 227, 227);
+    color: black;
+  }
+  /* Subscribe Section Venera */
+  .container-subscribe {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border: 1px solid black;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 18px 16px;
+    height: 250px;
+  
+  }
+  
+  .sub-p {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 5px 8px;
+    margin-bottom: 15px;
+  }
+  .form-control {
+    text-align: left;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  .sub-button {
+    font-weight: bolder;
+    width: max-content;
+    font-size: 18px;
+    color: aliceblue;
+    margin-top: 15px;
+    background-color: rgb(244, 67, 54);
+    padding: 10px 30px;
+    border: none;
+  }
+  .sub-button:hover {
+    font-weight: bolder;
+    color: black;
+    background-color: #ccc;
+  }
+  
+  hover-red:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f44336 !important;
+  }
+  
+  /* Contact Section Erzhan */
+  
+  footer {
+    background-color: rgb(241, 241, 241);
+  }
+  .container {
+    margin-left: 1px;
+    display: flex;
+    flex-direction: row;
+    left: 10px;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    height: 500px;
+    width: 80%;
+  }
+  /* Contact */
+  .contact {
+    align-items: center;
+    margin-top: 50px;
+    width: 40%;
+  }
+  .contact h2 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .contact p {
+    color: black;
+    font-size: 12px;
+  }
+  .contact .contact-form {
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-form input {
+    margin: 0 0 10px 20px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .send-message {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    text-align: center;
+    margin: 0 0 10px 20px;
+    padding: 10px;
+    border: none;
+  }
+  .send-message:hover {
+    background-color: #cccccc;
+    color: black;
+    border: 1px solid #cccccc;
+  }
+  /* About */
+  .about {
+    display: block;
+    color: black;
+    line-height: 13px;
+  }
+  
+  .about h2 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .about p {
+    display: block;
+    color: black;
+    margin: 20px;
+  }
+  .about p a {
+    color: black;
+    line-height: 10px;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Store */
+  .store {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    width: max-content;
+  }
+  .store h2 {
+    font-weight: 600;
+    margin-bottom: 17px;
+    padding-left: 5px;
+    font-size: 20px;
+    text-align: left;
+  }
+  .accept {
+    margin-top: 20px;
+  }
+  .items {
+    width: max-content;
+    font-size: 12px;
+    text-align: left;
+    padding: 5px;
+  }
+  .items span {
+    margin-left: 5px;
+  }
+  .social-media {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 5px;
+  }
+  .media {
+    display: block;
+  }
+  .fa-brands:hover {
+    background: white;
+    color: #ffffff;
+  }
+  /* Footer */
+  .powered-by {
+    font-size: 20px;
+    padding-top: 25px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    background-color: black;
+  }
+  .powered-by p a {
+    color: white;
+  }
+  .powered-by p a:hover {
+    color: darkgrey;
+  }
+  @media (min-width: 400px) {
+    .products-single{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 1fr);
+      justify-content: space-between;
+      gap: 20px;
+    
+    }
+    .product-card h3{
+      font-size: 25px;
+    }
+    .product-card .img-caption{
+      background-color: black;
+      color: white;
+      width: 100px;
+      height: 45px;
+       font-size: 30px;
+      position: absolute;
+      text-align: center;
+      top: 0;
+    }
+    .products-single .product-card .buy{
+      width: 14rem;
+      background-color: black;
+      color: white;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      margin: 5px;
+      display: none;
+      font-size: 30px;
+    }
+    .product-card:hover .buy{
+      display: inline;
+      cursor: pointer;
+    }
+    .products-single .product-card .buy:hover{
+      background-color: white;
+      color: black;
+    }
+    .buy a{
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+    }
+    .products-single .product-card .buy a:hover{
+      color: black;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .products-single{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      justify-content: space-between;
+      gap: 20px;
+    
+    }
+    .product-card h3{
+      font-size: 20px;
+    }
+  
+    /* Footer */
+    .powered-by {
+      font-size: 20px;
+      padding-top: 25px;
+      height: 100px;
+      text-align: center;
+      color: white;
+      background-color: black;
+    }
+    .product-card .img-caption{
+      background-color: black;
+      color: white;
+      width: 80px;
+      height: 40px;
+       font-size: 25px;
+      position: absolute;
+      text-align: center;
+      top: 0;
+    }
+    .products-single .product-card .buy{
+      width: 12rem;
+      background-color: black;
+      color: white;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      margin: 5px;
+      display: none;
+      font-size: 25px;
+    }
+    .product-card:hover .buy{
+      display: inline;
+      cursor: pointer;
+    }
+    .products-single .product-card .buy:hover{
+      background-color: white;
+      color: black;
+    }
+    .buy a{
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+    }
+    .products-single .product-card .buy a:hover{
+      color: black;
+    }
+  }
+  
+  
+  @media (min-width: 1000px) {
+    .products-single{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-content: space-between;
+      gap: 20px;
+    
+    }
+    .product-card h3{
+      font-size: 18px;
+    }
+    .product-card .img-caption{
+      background-color: black;
+      color: white;
+      width: 60px;
+      height: 30px;
+       font-size: 20px;
+      position: absolute;
+      text-align: center;
+      top: 0;
+    }
+    .products-single .product-card .buy{
+      width: 9rem;
+      background-color: black;
+      color: white;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      margin: 5px;
+      display: none;
+      font-size: 18px;
+    }
+    .product-card:hover .buy{
+      display: inline;
+      cursor: pointer;
+    }
+    .products-single .product-card .buy:hover{
+      background-color: white;
+      color: black;
+    }
+    .buy a{
+      font-weight: 600;
+      text-decoration: none;
+      color: white;
+    }
+    .products-single .product-card .buy a:hover{
+      color: black;
+    }
+  }
